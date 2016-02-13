@@ -63,7 +63,7 @@ WSGI_APPLICATION = 'rizr_project.wsgi.application'
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
 #parse database config from $DATABASE_URL
-DATABASES['default'] = dj_database_url.config()
+DATABASES = {'default': dj_database_url.config() }
 
 DATABASES['default']['CONN_MAX_AGE'] = 500
 
