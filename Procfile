@@ -1,0 +1,1 @@
+web: gunicorn rizr_project.wsgi --log-file -
