@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html>
+
+	<head>
+		<title>Rizr</title>
+		
+		<link rel="stylesheet" href="{% static "css/base.css" %}" />
+		
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+        <script src="../../static/js/search.js" type="text/javascript"></script>
+        <script src="https://apis.google.com/js/client.js?onload=onClientLoad" type="text/javascript"></script>
+	</head>
+	
+	<body>
+		<h1>Rizr - the stock market for youtube videos</h1>
+		<div id="query">
+			<input id="youtube_url" placeholder="Past Youtube URL here please"></input>
+			<button id="url_submit">Submit</button>
+		</div>
+		<br>
+		
+		<div id="results_wrapper">
+			<iframe id="video_frame" width="420" height="315" src="#">
+			</iframe>
+			<pre id="title"><b>Title:</b> </pre>
+			<pre id="response"><b>Expected Views:</b> </pre>
+			<br>
+			<br>
+			<br>
+			<br>
+			<pre id="full_response"></pre>
+		</div>
+	</body>
+	
+</html>

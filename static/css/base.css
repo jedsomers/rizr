@@ -1,0 +1,8 @@
+#results_wrapper {
+	visibility: hidden;
+}
+
+#query input {
+	margin-top: 20px;
+	width: 200px;
+}
